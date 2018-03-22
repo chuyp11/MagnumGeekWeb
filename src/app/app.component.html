@@ -1,20 +1,76 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">Examen Preparatoria</span>
+      <div class="mdl-layout-spacer"></div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Calificanos</a>
+      <a class="mdl-navigation__link" href="">Adivina la sombra</a>
+      <a class="mdl-navigation__link" href="">Correo</a>
+      <a class="mdl-navigation__link" href="">Facebook</a>
+      <a class="mdl-navigation__link" href="">Twitter</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+      <!-- <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+          <div class="mdl-cell mdl-cell--1-col">1</div>
+      </div>
+      <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--4-col">4</div>
+          <div class="mdl-cell mdl-cell--4-col">4</div>
+          <div class="mdl-cell mdl-cell--4-col">4</div>
+      </div>
+      <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col">6</div>
+          <div class="mdl-cell mdl-cell--4-col">4</div>
+          <div class="mdl-cell mdl-cell--2-col">2</div>
+      </div>
+      <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">6 (8 tablet)</div>
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet">4 (6 tablet)</div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">2 (4 phone)</div>
+      </div> -->
+
+    <div class="mdl-grid">
+        <div class="mdl-grid" *ngFor="let item of itemsList">
+            <div class="demo-card-square mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  This text might describe the photo and provide further information, such as where and
+                  when it was taken.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        View Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  </main>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 

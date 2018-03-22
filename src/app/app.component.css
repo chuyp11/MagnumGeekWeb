@@ -1,0 +1,28 @@
+.mdl-layout__content{
+  padding-bottom: 10px;
+  background-color: royalblue;
+}
+.mdl-cell{
+  background-color: #46B6AC;
+}
+.demo-card-square.mdl-card {
+  background-color: peru;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../assets/images/libro.png') center / cover #46B6AC;
+}
+
+/*Pa celulares en modo lanscape puedan tener dos cuadros en vez de uno*/
+@media screen and (orientation:landscape) and (min-width:640px) and (max-width:690px) {
+  .demo-card-square.mdl-card {
+    width: 290px;
+    height: 290px;
+  }
+}
